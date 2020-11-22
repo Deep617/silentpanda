@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/TextColor_white"
+    android:orientation="vertical"
+    tools:context="com.silentpanda.fragments.ProductListingFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#000">
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Collection"
+            android:textColor="@color/TextColor_white"
+            android:textSize="@dimen/header_text_size" />
+
+        <ImageView
+            android:id="@+id/filterBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:src="@drawable/filter" />
+    </RelativeLayout>
+
+    <com.silentpanda.utils.AutoGridView
+        android:id="@+id/productListGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" />
+
+</LinearLayout>

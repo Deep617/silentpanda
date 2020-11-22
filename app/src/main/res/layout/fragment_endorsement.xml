@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/TextColor_white"
+    android:orientation="vertical"
+    tools:context="com.silentpanda.fragments.EndorsementFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#000">
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Endorsements"
+            android:textColor="@color/TextColor_white"
+            android:textSize="@dimen/header_text_size" />
+    </RelativeLayout>
+
+    <com.silentpanda.utils.SlidingTabLayout
+        android:id="@+id/sliding_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="2dp"
+        android:textAlignment="center" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/brandListviewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="#fff" />
+
+
+</LinearLayout>

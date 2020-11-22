@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.silentpanda.fragments.MyWishListFragment"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#000">
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="My Wishlist"
+            android:textColor="#fff"
+            android:textSize="@dimen/header_text_size" />
+    </RelativeLayout>
+
+    <com.silentpanda.utils.AutoGridView
+        android:id="@+id/wishListGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" />
+
+</LinearLayout>

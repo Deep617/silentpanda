@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="com.silentpanda.activity.AfterScanActivity">
+
+
+    <ImageView
+        android:id="@+id/topIcon"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/panda_with_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topIcon"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/congratsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="CONGRATULATIONS"
+            android:textColor="#000"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/authText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:text="Your product is authenticated"
+            android:textColor="#000"
+            android:textSize="23sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/middleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/codeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="CODE"
+            android:textColor="#FF0000"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/readCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="34678"
+            android:textColor="#FF0000"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/proceedText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomLayout"
+        android:layout_below="@+id/middleLayout"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Press Next to proceed"
+        android:textColor="#000"
+        android:textSize="22sp" />
+
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:weightSum="2">
+
+        <ImageView
+            android:id="@+id/backIcon"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="-20dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/back" />
+
+        <ImageView
+            android:id="@+id/nextIcon"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="-20dp"
+            android:layout_weight="1"
+            android:src="@drawable/next" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

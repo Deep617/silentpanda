@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/TextColor_white"
+    android:fillViewport="true"
+    tools:context="com.silentpanda.fragments.HomeFragment">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/trending"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:padding="5dp"
+                    android:text="Trending"
+                    android:textColor="#696969"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="5dp"
+                    android:text="More"
+                    android:textColor="#FF0000"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <com.silentpanda.utils.AutoGridView
+                android:id="@+id/trendingView"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:horizontalSpacing="5dp"
+                android:numColumns="3"
+                android:stretchMode="columnWidth" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="#696969" />
+
+
+            <com.silentpanda.utils.AutoGridView
+                android:id="@+id/categoryView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:horizontalSpacing="10dp"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

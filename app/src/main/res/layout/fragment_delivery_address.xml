@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.silentpanda.fragments.DeliveryAddressFragment">
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="#000">
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Select Delivery Address"
+            android:textColor="#fff"
+            android:textSize="@dimen/header_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomLayout"
+        android:layout_below="@+id/topLayout"
+        android:layout_margin="10dp">
+
+        <ListView
+            android:id="@+id/lvList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null" />
+
+        <ImageView
+            android:id="@+id/addAddressBtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/lvList"
+            android:background="@drawable/add_new_address" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_bg">
+
+        <ImageView
+            android:id="@+id/nextBtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/address_next" />
+    </RelativeLayout>
+
+</RelativeLayout>
